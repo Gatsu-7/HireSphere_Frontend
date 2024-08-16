@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { ImBlog } from "react-icons/im";
 import { MdAttachEmail } from "react-icons/md";
 import { motion } from "framer-motion";
-import logo from "../assets/logo.jpeg";
+import logo from "../assets/file.png";
 const Header = () => {
   return (
     <nav>
@@ -12,7 +12,13 @@ const Header = () => {
         whileInView={{ x: 0 }}
         transition={{ duration: 0.7 }}
       >
-        <img src={logo} alt="" className="logo" height="70px" width="70px" />
+        <motion.img
+          src={logo}
+          alt=""
+          className="logo"
+          height="70px"
+          width="70px"
+        />
       </motion.div>
       <div>
         <Link to="/">Home</Link>
