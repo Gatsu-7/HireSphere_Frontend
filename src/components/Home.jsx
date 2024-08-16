@@ -1,6 +1,6 @@
 import React from "react";
 import img from "../assets/bg22.png";
-import { motion } from "framer-motion";
+import { motion, useScroll, useSpring } from "framer-motion";
 import JobsByDomain from "./Jobsbydomain";
 import ScrollSection from "./ScrollSection.jsx";
 
@@ -15,10 +15,16 @@ const Home = () => {
       opacity: 1,
     },
   };
+  const { scrollYProgress } = useScroll();
+  const scaleX = useSpring(scrollYProgress, {
+    stiffness: 100,
+    damping: 30,
+    restDelta: 0.001,
+  });
 
   return (
     <>
-      {/* Home Section */}
+      <motion.div className="progress-bar" style={{ scaleX }} />
       <section className="home">
         <div className="left">
           <div>
@@ -44,11 +50,10 @@ const Home = () => {
           <img src={img} alt="background" />
         </div>
       </section>
-
       <section className="jobs-section">
         <JobsByDomain />
       </section>
-      <section>
+      <section className="scroll-section">
         <ScrollSection />
       </section>
     </>
