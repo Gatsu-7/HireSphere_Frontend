@@ -3,6 +3,9 @@ import img from "../assets/bg22.png";
 import { motion, useScroll, useSpring } from "framer-motion";
 import JobsByDomain from "./Jobsbydomain";
 import ScrollSection from "./ScrollSection.jsx";
+import ScrollingLogos from "./Scrollinglogos.jsx";
+import PaidServices from "./Paidservices.jsx";
+import Blogs from "./Blogs.jsx";
 
 const Home = () => {
   const options = {
@@ -55,6 +58,15 @@ const Home = () => {
       </section>
       <section className="scroll-section">
         <ScrollSection />
+      </section>
+      <section>
+        <ScrollingLogos />
+      </section>
+      <section>
+        <PaidServices />
+      </section>
+      <section>
+        <Blogs />
       </section>
     </>
   );

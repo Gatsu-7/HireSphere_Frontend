@@ -8,6 +8,9 @@ import "./styles/home.scss";
 import "./styles/app.scss";
 import "./styles/jobsbydomain.scss";
 import "./styles/scrollsection.scss";
+import "./styles/scrollinglogos.scss";
+import "./styles/paidservices.scss";
+import "./styles/blogs.scss";
 
 function App() {
   return (
