@@ -11,6 +11,8 @@ import "./styles/scrollsection.scss";
 import "./styles/scrollinglogos.scss";
 import "./styles/paidservices.scss";
 import "./styles/blogs.scss";
+import "./styles/faq.scss";
+import "./styles/testimonials.scss";
 
 function App() {
   return (

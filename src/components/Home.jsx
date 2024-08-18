@@ -6,6 +6,8 @@ import ScrollSection from "./ScrollSection.jsx";
 import ScrollingLogos from "./Scrollinglogos.jsx";
 import PaidServices from "./Paidservices.jsx";
 import Blogs from "./Blogs.jsx";
+import FAQ from "./Faq.jsx";
+import Testimonials from "./Testimonials..jsx";
 
 const Home = () => {
   const options = {
@@ -67,6 +69,12 @@ const Home = () => {
       </section>
       <section>
         <Blogs />
+      </section>
+      <section>
+        <FAQ />
+      </section>
+      <section>
+        <Testimonials />
       </section>
     </>
   );
