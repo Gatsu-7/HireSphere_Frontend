@@ -6,7 +6,7 @@ const PinterestRegister = () => {
     <div className="pinterest-register">
       <div className="register-container">
         <h1 className="register-title">Welcome To HireSphere</h1>
-        <h4 className="subtitle">Connect Talent, Igniting Futures</h4>
+        <h4 className="subtitle">Connecting Talent, Igniting Futures</h4>
         <form method="post">
           <h4 className="input-label">Email</h4>
           <input
