@@ -19,6 +19,8 @@
     .content {
       margin: 2rem;
       padding: 1rem;
+      margin-bottom: 2rem;
+
       img {
         width: 380px;
         height: 250px;
@@ -44,7 +46,10 @@
           scale: 1.05;
         }
       }
-      > h3 {
+      > a {
+        color: black;
+        font-size: 1.2rem;
+        font-weight: 500;
         cursor: pointer;
       }
       > p {

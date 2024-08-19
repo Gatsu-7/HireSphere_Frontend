@@ -71,10 +71,10 @@ const Home = () => {
         <Blogs />
       </section>
       <section>
-        <FAQ />
+        <Testimonials />
       </section>
       <section>
-        <Testimonials />
+        <FAQ />
       </section>
     </>
   );

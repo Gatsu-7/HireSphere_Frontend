@@ -1,8 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import logo from "../assets/file.png";
 const Header = () => {
+  const navigate = useNavigate();
+
+  const handleClick = () => {
+    navigate("/");
+  };
   return (
     <nav>
       <motion.div
@@ -16,6 +22,7 @@ const Header = () => {
           className="logo"
           height="70px"
           width="70px"
+          onClick={handleClick}
         />
       </motion.div>
       <div>
@@ -25,12 +32,6 @@ const Header = () => {
         <Link to="/signin" className="sign-in-button">
           Sign In
         </Link>
-        {/* <Link to="/blog">
-          <ImBlog />
-        </Link>
-        <Link to="/contact">
-          <MdAttachEmail />
-        </Link> */}
       </div>
     </nav>
   );

@@ -50,9 +50,9 @@ const PaidServices = () => {
               </div>
             ))}
           </div>
-          <a href="#" className="view-all">
+          {/* <a href="#" className="view-all">
             View all
-          </a>
+          </a> */}
         </section>
       </section>
     </>

@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Blogs = () => {
   return (
@@ -11,10 +12,10 @@ const Blogs = () => {
             alt=""
           />
           <button>3 min read</button>
-          <h3>
+          <Link to="/remote_blog">
             The Future of Remote Work: Trends and Predictions for 2025 and
             Beyond
-          </h3>
+          </Link>
           <p>
             Explore how remote work is evolving, what new technologies are
             shaping the....
@@ -26,9 +27,9 @@ const Blogs = () => {
             alt=""
           />
           <button>7 min read</button>
-          <h3>
+          <Link to="/master_blog">
             Mastering the Art of the Job Interview: Tips from Industry Experts
-          </h3>
+          </Link>
           <p>
             Provide actionable advice on how to excel in job interviews,
             including insights from....
@@ -40,21 +41,21 @@ const Blogs = () => {
             alt=""
           />
           <button>6 min read</button>
-          <h3>
+          <Link to="/Branding_blog">
             Building a Personal Brand on LinkedIn: Strategies to Stand Out in
             2024
-          </h3>
+          </Link>
           <p>
             Discuss the importance of personal branding on LinkedIn, offering
             strategies....
           </p>
         </div>
       </div>
-      <div>
+      {/* <div>
         <a href="#" className="view-all">
           View all
         </a>
-      </div>
+      </div> */}
     </section>
   );
 };

@@ -8,6 +8,13 @@ import PrivacyPolicy from "./components/Privacypolicy";
 import TermsOfService from "./components/Termsofservice";
 import HelpCentre from "./components/Helpcentre";
 import NewsletterModal from "./components/Newslettersign";
+import AboutUs from "./components/Aboutus";
+import Login from "./components/Login";
+import Register from "./components/Register";
+import Remote_blog from "./components/Remote_blog";
+import Master_blog from "./components/Master_blog";
+import Branding_blog from "./components/Branding_blog";
+import JobListingsPage from "./components/Joblistings";
 
 import "./styles/header.scss";
 import "./styles/footer.scss";
@@ -23,8 +30,14 @@ import "./styles/testimonials.scss";
 import "./styles/privacypolicy.scss";
 import "./styles/termsofservice.scss";
 import "./styles/helpcentre.scss";
-// import "./styles/newsletter.scss";
 import "./styles/newslettermodal.scss";
+import "./styles/aboutus.scss";
+import "./styles/login.scss";
+import "./styles/register.scss";
+import "./styles/remote_blog.scss";
+import "./styles/master_blog.scss";
+import "./styles/branding_blog.scss";
+import "./styles/joblistings.scss";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -41,6 +54,13 @@ function App() {
         <Route path="/terms" element={<TermsOfService />}></Route>
         <Route path="/help" element={<HelpCentre />}></Route>
         <Route path="/newsletter" element={<NewsletterModal />}></Route>
+        <Route path="/about" element={<AboutUs />}></Route>
+        <Route path="/login" element={<Login />}></Route>
+        <Route path="/signin" element={<Register />}></Route>
+        <Route path="/remote_blog" element={<Remote_blog />}></Route>
+        <Route path="/master_blog" element={<Master_blog />}></Route>
+        <Route path="/branding_blog" element={<Branding_blog />}></Route>
+        <Route path="/joblistings" element={<JobListingsPage />}></Route>
       </Routes>
 
       <Footer onNewsletterClick={openNewsletterModal} />

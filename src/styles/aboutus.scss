@@ -1,0 +1,117 @@
+.about-us {
+  padding: 2rem 10%;
+  font-family: "Open Sans", sans-serif;
+  color: #333;
+  line-height: 1.8;
+  background-color: #f9f9f9;
+
+  &-header {
+    text-align: center;
+    margin-bottom: 3rem;
+
+    h1 {
+      font-size: 3rem;
+      color: #0066cc;
+      margin-bottom: 0.5rem;
+    }
+
+    p {
+      display: inline-block;
+      border-bottom: 1px solid rgb(0, 0, 0);
+      font-size: 1.5rem;
+      color: #555;
+    }
+  }
+
+  &-story,
+  &-mission,
+  &-vision,
+  &-values,
+  &-team,
+  &-impact,
+  &-future,
+  &-contact {
+    margin-bottom: 3rem;
+
+    h2 {
+      font-size: 2.5rem;
+      margin-bottom: 1.5rem;
+      color: #444;
+    }
+
+    p {
+      font-size: 1.25rem;
+      color: #666;
+      margin-bottom: 1rem;
+    }
+  }
+
+  &-values ul {
+    margin-top: 1rem;
+    padding-left: 1.5rem;
+    list-style: disc;
+
+    li {
+      margin-bottom: 0.75rem;
+      color: #555;
+      font-size: 1.2rem;
+
+      strong {
+        color: #222;
+      }
+    }
+  }
+
+  &-team {
+    .team-members {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+
+      .team-member {
+        flex: 1 1 30%;
+        text-align: center;
+        margin-bottom: 2rem;
+
+        img {
+          height: 200px;
+          width: 100%;
+          border-radius: 60px;
+          padding: 1rem 2rem;
+          margin-bottom: 1rem;
+
+          object-fit: cover;
+        }
+
+        h3 {
+          font-size: 1.5rem;
+          color: #333;
+          margin-bottom: 0.5rem;
+        }
+
+        p {
+          font-size: 1.1rem;
+          color: #777;
+        }
+      }
+    }
+  }
+
+  &-contact {
+    text-align: center;
+
+    p {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+
+      a {
+        color: #0066cc;
+        text-decoration: none;
+
+        &:hover {
+          color: #004c99;
+        }
+      }
+    }
+  }
+}

@@ -79,11 +79,11 @@ const FAQ = () => {
             </div>
           ))}
         </div>
-        <div className="anchor-view">
+        {/* <div className="anchor-view">
           <a href="#" className="view-all">
             View all
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
