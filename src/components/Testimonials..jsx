@@ -147,6 +147,7 @@ const Testimonials = () => {
     <>
       <div className="container">
         <div className="testimonials">
+          <h1>Our Testimonials</h1>
           <div className="testimonial-slider">
             {testimonials.map((testimonial, index) => (
               <div

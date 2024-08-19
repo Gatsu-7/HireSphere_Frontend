@@ -2,8 +2,9 @@ import React from "react";
 import { FaLinkedin } from "react-icons/fa";
 import { FaSquareXTwitter } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
-const Footer = () => {
+const Footer = ({ onNewsletterClick }) => {
   return (
     <footer className="footer">
       <div className="footer-content">
@@ -18,11 +19,11 @@ const Footer = () => {
         <div className="footer-section contact">
           <h2>Contact Information</h2>
           <p>
-            Email:{" "}
+            Email:
             <a href="mailto:support@hiresphere.com">support@hiresphere.com</a>
           </p>
           <p>
-            Phone: <a href="tel:+916945871236">+916945871236</a>
+            Phone: <a href="tel:1-800-447-3774">1-800-447-3774</a>
           </p>
           <p>
             Address: 1234 Talent Street, Suite 100, Metropolis, ST 54321, USA
@@ -32,13 +33,13 @@ const Footer = () => {
           <h2>Links</h2>
           <ul>
             <li>
-              <a href="#">Privacy Policy</a>
+              <Link to="/privacy">Privacy Policy</Link>
             </li>
             <li>
-              <a href="#">Terms of Service</a>
+              <Link to="/terms">Terms of Service</Link>
             </li>
             <li>
-              <a href="#">Help Center</a>
+              <Link to="/help">Help Center</Link>
             </li>
           </ul>
         </div>
@@ -81,7 +82,10 @@ const Footer = () => {
           <h2>Newsletter Signup</h2>
           <p>
             Stay updated with the latest job opportunities and company news.{" "}
-            <a href="#">Sign up for our newsletter</a>.
+            <a href="#" onClick={onNewsletterClick}>
+              Sign up for our newsletter
+            </a>
+            .
           </p>
         </div>
       </div>

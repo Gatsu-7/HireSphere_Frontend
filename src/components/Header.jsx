@@ -1,7 +1,5 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { ImBlog } from "react-icons/im";
-import { MdAttachEmail } from "react-icons/md";
 import { motion } from "framer-motion";
 import logo from "../assets/file.png";
 const Header = () => {
@@ -23,14 +21,16 @@ const Header = () => {
       <div>
         <Link to="/">Home</Link>
         <Link to="/joblistings">Job Listings</Link>
-        <Link to="/hiretalent">Hire Talent</Link>
         <Link to="/about">About Us</Link>
-        <Link to="/blog">
+        <Link to="/signin" className="sign-in-button">
+          Sign In
+        </Link>
+        {/* <Link to="/blog">
           <ImBlog />
         </Link>
         <Link to="/contact">
           <MdAttachEmail />
-        </Link>
+        </Link> */}
       </div>
     </nav>
   );

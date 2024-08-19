@@ -1,3 +1,4 @@
+@import "color";
 .container {
   //   display: flex;
   //   justify-content: center;
@@ -23,6 +24,12 @@
   height: auto; // Change to auto to fit content, or set min-height if necessary
   width: 60%;
   border-radius: 20px;
+  > h1 {
+    font-size: 3rem;
+    color: $skin;
+    margin-top: 2rem;
+    text-align: center;
+  }
 
   .testimonial-slider {
     display: flex;
@@ -119,8 +126,11 @@
   .container {
     // width: 100%;
     .testimonials {
-      border-radius: 0;
+      // border-radius: 0;
       width: 100%;
+      > h1 {
+        font-size: 2.5rem;
+      }
     }
   }
 }
