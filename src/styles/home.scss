@@ -40,8 +40,12 @@
         border-radius: 15px;
         margin: 1rem 0;
         outline: none;
+        border: none;
         &:hover {
-          background-color: rgba(106, 6, 106, 0.796);
+          background-color: rgb(11, 11, 168);
+        }
+        a {
+          color: white;
         }
       }
     }

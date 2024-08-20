@@ -1,5 +1,6 @@
 .terms-of-service {
   padding: 4rem 6rem;
+  background-color: #dfdbe5;
 
   font-family: Arial, sans-serif;
   color: #333;
@@ -47,5 +48,13 @@
 @media screen and (max-width: 600px) {
   .terms-of-service {
     padding: 2rem;
+    > h1 {
+      text-align: center;
+    }
+    > section {
+      > h2 {
+        text-align: center;
+      }
+    }
   }
 }

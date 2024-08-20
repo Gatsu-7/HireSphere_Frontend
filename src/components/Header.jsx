@@ -2,7 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
-import logo from "../assets/file.png";
+import logo from "../assets/logo3.jpeg";
 const Header = () => {
   const navigate = useNavigate();
 
@@ -20,8 +20,8 @@ const Header = () => {
           src={logo}
           alt=""
           className="logo"
-          height="70px"
-          width="70px"
+          height="60px"
+          width="60px"
           onClick={handleClick}
         />
       </motion.div>

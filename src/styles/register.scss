@@ -10,7 +10,7 @@
 
   .register-container {
     width: 35rem;
-    height: 78vh;
+    // height: 78vh;
     background-color: white;
     padding: 2rem 4rem;
     border-radius: 30px;
@@ -104,6 +104,37 @@
       color: #4b5563;
       text-align: center;
       width: 100%;
+    }
+  }
+}
+@media screen and (max-width: 600px) {
+  .pinterest-register {
+    padding: 1rem;
+    height: auto;
+
+    .register-container {
+      width: 90%;
+      padding: 1rem 2rem;
+
+      .register-title {
+        font-size: 1.5rem;
+      }
+
+      .subtitle {
+        font-size: 0.875rem;
+      }
+
+      .input-field {
+        padding: 0.5rem;
+      }
+
+      .submit-btn {
+        padding: 0.5rem;
+      }
+
+      .login-link {
+        font-size: 0.75rem;
+      }
     }
   }
 }

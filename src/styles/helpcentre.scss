@@ -2,6 +2,7 @@
   padding: 4rem 6rem;
   font-family: Arial, sans-serif;
   color: #333;
+  background-color: #dfdbe5;
 
   h1 {
     font-size: 2.5rem;
@@ -60,5 +61,13 @@
 @media screen and (max-width: 600px) {
   .help-centre {
     padding: 2rem;
+    > h1 {
+      text-align: center;
+    }
+    > section {
+      > h2 {
+        text-align: center;
+      }
+    }
   }
 }

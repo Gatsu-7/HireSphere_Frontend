@@ -8,6 +8,7 @@ import PaidServices from "./Paidservices.jsx";
 import Blogs from "./Blogs.jsx";
 import FAQ from "./Faq.jsx";
 import Testimonials from "./Testimonials..jsx";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const options = {
@@ -47,7 +48,7 @@ const Home = () => {
               transition={{ delay: 0.3, duration: 0.8 }}
               className="search-button"
             >
-              Search
+              <Link to="/joblistings">Search</Link>
             </motion.button>
           </div>
         </div>

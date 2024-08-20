@@ -108,3 +108,46 @@
     }
   }
 }
+@media screen and (max-width: 600px) {
+  .login {
+    padding: 1rem;
+    height: auto;
+
+    .login-container {
+      width: 90%;
+      padding: 1.5rem 2rem;
+      height: auto;
+
+      .login-title {
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+      }
+
+      .input-field {
+        padding: 0.5rem;
+      }
+
+      .submit-btn {
+        padding: 0.5rem;
+      }
+
+      .forgot-password {
+        font-size: 0.875rem;
+      }
+
+      .separator {
+        margin: 0.5rem 0;
+      }
+
+      .terms {
+        font-size: 0.75rem;
+      }
+
+      .register-link {
+        font-size: 0.75rem;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
