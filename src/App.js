@@ -15,7 +15,8 @@ import Remote_blog from "./components/Remote_blog";
 import Master_blog from "./components/Master_blog";
 import Branding_blog from "./components/Branding_blog";
 import JobListingsPage from "./components/Joblistings";
-
+import Frontend_developer from "./components/Jobs/Frontend_developer";
+import Backend_developer from "./components/Jobs/Backend_developer";
 import "./styles/header.scss";
 import "./styles/footer.scss";
 import "./styles/home.scss";
@@ -38,6 +39,7 @@ import "./styles/remote_blog.scss";
 import "./styles/master_blog.scss";
 import "./styles/branding_blog.scss";
 import "./styles/joblistings.scss";
+import "./styles/frontend_knowmore.scss";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -61,6 +63,11 @@ function App() {
         <Route path="/master_blog" element={<Master_blog />}></Route>
         <Route path="/branding_blog" element={<Branding_blog />}></Route>
         <Route path="/joblistings" element={<JobListingsPage />}></Route>
+        <Route
+          path="/frontend_knowmore"
+          element={<Frontend_developer />}
+        ></Route>
+        <Route path="/backend_knowmore" element={<Backend_developer />}></Route>
       </Routes>
 
       <Footer onNewsletterClick={openNewsletterModal} />
