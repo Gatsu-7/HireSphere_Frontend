@@ -18,6 +18,8 @@ import Branding_blog from "./components/Branding_blog";
 import JobListingsPage from "./components/Joblistings";
 import Frontend_developer from "./components/Jobs/Frontend_developer";
 import Backend_developer from "./components/Jobs/Backend_developer";
+import Uiux_developer from "./components/Jobs/Uiux";
+import Project_manager from "./components/Jobs/Project_manager";
 
 import "./styles/header.scss";
 import "./styles/footer.scss";
@@ -71,6 +73,11 @@ function App() {
           element={<Frontend_developer />}
         ></Route>
         <Route path="/backend_knowmore" element={<Backend_developer />}></Route>
+        <Route path="/uiux_knowmore" element={<Uiux_developer />}></Route>
+        <Route
+          path="/projectmanager_knowmore"
+          element={<Project_manager />}
+        ></Route>
       </Routes>
 
       <Footer onNewsletterClick={openNewsletterModal} />
