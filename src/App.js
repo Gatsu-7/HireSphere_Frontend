@@ -1,6 +1,7 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useState } from "react";
 
+import ScrollToTop from "./components/Scrolltotop";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
 import Home from "./components/Home";
@@ -17,6 +18,7 @@ import Branding_blog from "./components/Branding_blog";
 import JobListingsPage from "./components/Joblistings";
 import Frontend_developer from "./components/Jobs/Frontend_developer";
 import Backend_developer from "./components/Jobs/Backend_developer";
+
 import "./styles/header.scss";
 import "./styles/footer.scss";
 import "./styles/home.scss";
@@ -49,6 +51,7 @@ function App() {
   };
   return (
     <Router>
+      <ScrollToTop />
       <Header />
       <Routes>
         <Route path="/" element={<Home />}></Route>
