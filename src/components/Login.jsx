@@ -1,18 +1,65 @@
-import React from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 const Login = () => {
+  const [formData, setFormData] = useState({
+    email: "",
+    password: "",
+  });
+
+  const navigate = useNavigate(); // Add useNavigate hook for redirection
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData((prevData) => ({
+      ...prevData,
+      [name]: value,
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+
+    try {
+      const response = await fetch("http://localhost:4000/api/login", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify(formData),
+      });
+
+      const data = await response.json();
+
+      if (data.success) {
+        // Store the token in localStorage
+        localStorage.setItem("authToken", data.token); // Assume the token is in data.token
+
+        alert("Login successful!");
+        // Redirect to a route where the Header component is rendered
+        navigate("/");
+      } else {
+        alert(data.message);
+      }
+    } catch (error) {
+      console.error("Error during login:", error);
+      alert("Login failed. Please try again later.");
+    }
+  };
+
   return (
     <div className="login">
       <div className="login-container">
         <h1 className="login-title">Login to your Account</h1>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h4 className="input-label">Email</h4>
           <input
             className="input-field"
             type="text"
-            name="username"
+            name="email"
             placeholder="Email"
+            value={formData.email}
+            onChange={handleChange}
           />
           <h4 className="input-label">Password</h4>
           <input
@@ -20,6 +67,8 @@ const Login = () => {
             type="password"
             placeholder="Password"
             name="password"
+            value={formData.password}
+            onChange={handleChange}
           />
           <a className="forgot-password" href="#">
             Forgot your password?
@@ -28,12 +77,6 @@ const Login = () => {
             className="submit-btn login-btn"
             type="submit"
             value="Log in"
-          />
-          <h3 className="separator">OR</h3>
-          <input
-            className="submit-btn facebook-btn"
-            type="submit"
-            value="Continue with Facebook"
           />
           <h5 className="terms">By continuing, you agree to HireSphere's</h5>
           <h5 className="terms-details">

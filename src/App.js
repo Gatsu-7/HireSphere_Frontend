@@ -44,6 +44,8 @@ import "./styles/master_blog.scss";
 import "./styles/branding_blog.scss";
 import "./styles/joblistings.scss";
 import "./styles/frontend_knowmore.scss";
+import "./styles/applypage.scss";
+import ApplyPage from "./components/Applypage";
 
 function App() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -68,6 +70,8 @@ function App() {
         <Route path="/master_blog" element={<Master_blog />}></Route>
         <Route path="/branding_blog" element={<Branding_blog />}></Route>
         <Route path="/joblistings" element={<JobListingsPage />}></Route>
+        <Route path="/apply/:jobId" element={<ApplyPage />} />
+
         <Route
           path="/frontend_knowmore"
           element={<Frontend_developer />}
