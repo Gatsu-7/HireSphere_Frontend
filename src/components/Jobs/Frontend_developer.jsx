@@ -1,6 +1,10 @@
 import React from "react";
+import { Link, useParams } from "react-router-dom";
 
+import jobData from "../jobData";
 const KnowMore = () => {
+  const { jobId } = useParams();
+  const job = jobData;
   return (
     <div className="know-more-page">
       <div className="job-header">
@@ -57,7 +61,9 @@ const KnowMore = () => {
         </ul>
 
         <div className="apply-section">
-          <button className="apply-btn">Apply Now</button>
+          <button className="apply-btn">
+            <Link to={`/apply/1`}> Apply Now</Link>
+          </button>
         </div>
       </div>
     </div>

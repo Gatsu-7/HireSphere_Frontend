@@ -37,7 +37,7 @@ const Blogs = () => {
         </div>
         <div className="content">
           <img
-            src="https://nishvishah.com/wp-content/uploads/2024/01/personal-branding-linkedin-1.jpeg"
+            src="https://imageio.forbes.com/specials-images/imageserve/660449096/Build-Your-Personal-Brand/960x0.jpg?format=jpg&width=960"
             alt=""
           />
           <button>6 min read</button>

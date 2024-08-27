@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const uiux = () => {
   return (
@@ -67,7 +68,9 @@ const uiux = () => {
         </ul>
 
         <div className="apply-section">
-          <button className="apply-btn">Apply Now</button>
+          <button className="apply-btn">
+            <Link to={`/apply/3`}> Apply Now</Link>
+          </button>
         </div>
       </div>
     </div>

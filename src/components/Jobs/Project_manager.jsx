@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const KnowMore = () => {
   return (
@@ -73,7 +74,9 @@ const KnowMore = () => {
         </ul>
 
         <div className="apply-section">
-          <button className="apply-btn">Apply Now</button>
+          <button className="apply-btn">
+            <Link to={`/apply/4`}> Apply Now</Link>
+          </button>
         </div>
       </div>
     </div>
