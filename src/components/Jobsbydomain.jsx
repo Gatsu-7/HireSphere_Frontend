@@ -4,7 +4,7 @@ import React from "react";
 const JobsByDomain = () => {
   return (
     <section className="jobs-by-domain">
-      <h2>Jobs by Domain</h2>
+      <h2>Internships by Domain</h2>
       <div className="domain-tags">
         <button className="domain-tag">Sales</button>
         <button className="domain-tag">
@@ -19,9 +19,9 @@ const JobsByDomain = () => {
         <button className="domain-tag">Artificial Intelligence</button>
         <button className="domain-tag">Design</button>
       </div>
-      <a href="#" className="view-all">
+      {/* <a href="#" className="view-all">
         View all Domains
-      </a>
+      </a> */}
     </section>
   );
 };

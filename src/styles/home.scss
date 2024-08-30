@@ -97,8 +97,18 @@
     }
 
     .right {
-      display: none;
-      //   padding-top: 2rem;
+      // // display: none;
+      padding-top: 2rem;
+      padding-right: 0rem;
+      padding-bottom: 2rem;
+
+      > img {
+        height: auto;
+        width: 350px;
+        overflow: hidden;
+      }
+
+      padding-top: 2rem;
     }
   }
 }

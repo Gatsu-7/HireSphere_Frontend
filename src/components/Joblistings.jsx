@@ -74,11 +74,11 @@ const JobListingsPage = () => {
   return (
     <div className="job-listings-page">
       <header className="job-header">
-        <h1>Job Listings</h1>
+        <h1>Internships</h1>
         <div className="search-bar">
           <input
             type="text"
-            placeholder="Search by job title..."
+            placeholder="Search by internship title..."
             value={searchTerm}
             onChange={handleSearch}
           />
@@ -92,7 +92,7 @@ const JobListingsPage = () => {
             <option value="Chicago, IL">Chicago, IL</option>
           </select>
           <select value={jobTypeFilter} onChange={handleJobTypeFilter}>
-            <option value="">All Job Types</option>
+            <option value="">All Internship Types</option>
             <option value="Full-Time">Full-Time</option>
             <option value="Part-Time">Part-Time</option>
             <option value="Contract">Contract</option>

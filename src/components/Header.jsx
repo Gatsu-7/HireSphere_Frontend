@@ -47,7 +47,7 @@ const Header = () => {
       </motion.div>
       <div>
         <Link to="/">Home</Link>
-        <Link to="/joblistings">Job Listings</Link>
+        <Link to="/joblistings">Internships</Link>
         <Link to="/about">About Us</Link>
         {isAuthenticated ? (
           <button onClick={handleLogout} className="sign-in-button">

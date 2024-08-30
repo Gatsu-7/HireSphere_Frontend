@@ -35,7 +35,7 @@ const Home = () => {
         <div className="left">
           <div>
             <motion.h1 {...options} transition={{ delay: 0.1, duration: 0.8 }}>
-              Land Your Dream Job Today
+              Land Your Dream Internship Today
             </motion.h1>
             <motion.p {...options} transition={{ delay: 0.2, duration: 0.8 }}>
               Connecting Talent, Igniting Futures
