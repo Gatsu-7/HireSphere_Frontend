@@ -20,12 +20,12 @@
     padding-top: 10rem;
     > div {
       h1 {
-        font-size: 2.5rem;
+        font-size: 2.8rem;
         text-transform: uppercase;
         // font-family: "Poppins";
       }
       > p {
-        font-size: 1.5rem;
+        font-size: 1.8rem;
         font-weight: 400;
         color: $lightdark;
         // font-family: "Poppins";
@@ -35,7 +35,7 @@
       .search-button {
         background-color: $purple;
         color: white;
-        font-size: 1.1rem;
+        font-size: 1.5rem;
         padding: 0.5rem 1.8rem;
         border-radius: 15px;
         margin: 1rem 0;
@@ -82,7 +82,7 @@
       align-items: center;
 
       > div h1 {
-        font-size: 2rem;
+        font-size: 2.2rem;
       }
 
       > div p {
@@ -90,7 +90,8 @@
       }
 
       .search-button {
-        font-size: 1rem;
+        // font-size: 0.5rem;
+
         padding: 0.5rem 1.5rem;
         border-radius: 10px;
       }

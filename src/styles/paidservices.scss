@@ -17,7 +17,7 @@
 
     .section-title {
       margin-top: 2rem;
-      font-size: 2rem;
+      font-size: 3rem;
       color: #fff;
       margin-bottom: 4rem;
     }
@@ -36,6 +36,7 @@
       border-radius: 10px;
       padding: 20px;
       text-align: center;
+      height: 250px;
       width: 300px;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
       transition: scale 0.3s ease;
@@ -51,13 +52,13 @@
       }
 
       .service-title {
-        font-size: 1.25rem;
+        font-size: 1.5rem;
         color: #2b2c85;
         margin-bottom: 10px;
       }
 
       .service-description {
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: #666;
         margin-bottom: 15px;
       }
@@ -87,6 +88,9 @@
   .paid-services-container {
     .paid-services {
       height: auto;
+      .section-title {
+        font-size: 2rem;
+      }
     }
   }
 }

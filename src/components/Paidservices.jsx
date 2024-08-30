@@ -44,9 +44,9 @@ const PaidServices = () => {
                 />
                 <h3 className="service-title">{service.title}</h3>
                 <p className="service-description">{service.description}</p>
-                <a href={service.link} className="service-link">
+                {/* <a href={service.link} className="service-link">
                   Find out more <span>&#8594;</span>
-                </a>
+                </a> */}
               </div>
             ))}
           </div>
