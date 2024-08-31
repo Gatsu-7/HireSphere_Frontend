@@ -35,10 +35,13 @@ const ApplyPage = () => {
     data.append("coverLetter", formData.coverLetter);
 
     try {
-      const response = await fetch("http://localhost:4000/api/apply", {
-        method: "POST",
-        body: data,
-      });
+      const response = await fetch(
+        "https://hirespere-backend.onrender.com//api/apply",
+        {
+          method: "POST",
+          body: data,
+        }
+      );
 
       if (!response.ok) {
         throw new Error("Network response was not ok.");
