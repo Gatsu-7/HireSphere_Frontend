@@ -9,6 +9,7 @@
   padding: 2rem 2rem;
   > h2 {
     text-align: center;
+    margin-bottom: 2rem;
     font-size: 3rem;
     color: $purple;
     // margin-bottom: 2rem;
@@ -61,6 +62,8 @@
   > div {
     display: flex;
     justify-content: center;
+    background-color: darkcyan;
+    border-radius: 10px;
     .view-all {
       margin-top: 20px;
       font-size: 1.3rem;

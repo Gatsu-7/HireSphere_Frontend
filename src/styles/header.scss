@@ -37,6 +37,21 @@ nav {
         background-color: rgb(11, 11, 168);
       }
     }
+    .log-out-button {
+      background-color: $purple;
+      padding: 0.5rem 1rem;
+      color: white;
+      border-radius: 20px;
+      font-size: 1rem;
+      // outline: none;
+      // display: inline-block;
+      // outline: none;
+      border: none;
+      &:hover {
+        color: white;
+        background-color: rgb(11, 11, 168);
+      }
+    }
 
     > a {
       margin: 0 2rem;

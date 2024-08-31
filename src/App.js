@@ -1,5 +1,6 @@
 import { Route, BrowserRouter as Router, Routes } from "react-router-dom";
 import { useState } from "react";
+import { AuthProvider } from "./components/Authcontext";
 
 import ScrollToTop from "./components/Scrolltotop";
 import Header from "./components/Header";
@@ -55,37 +56,44 @@ function App() {
   };
   return (
     <Router>
-      <ScrollToTop />
-      <Header />
-      <Routes>
-        <Route path="/" element={<Home />}></Route>
-        <Route path="/privacy" element={<PrivacyPolicy />}></Route>
-        <Route path="/terms" element={<TermsOfService />}></Route>
-        <Route path="/help" element={<HelpCentre />}></Route>
-        <Route path="/newsletter" element={<NewsletterModal />}></Route>
-        <Route path="/about" element={<AboutUs />}></Route>
-        <Route path="/login" element={<Login />}></Route>
-        <Route path="/signin" element={<Register />}></Route>
-        <Route path="/remote_blog" element={<Remote_blog />}></Route>
-        <Route path="/master_blog" element={<Master_blog />}></Route>
-        <Route path="/branding_blog" element={<Branding_blog />}></Route>
-        <Route path="/joblistings" element={<JobListingsPage />}></Route>
-        <Route path="/apply/:jobId" element={<ApplyPage />} />
+      <AuthProvider>
+        <ScrollToTop />
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />}></Route>
+          <Route path="/privacy" element={<PrivacyPolicy />}></Route>
+          <Route path="/terms" element={<TermsOfService />}></Route>
+          <Route path="/help" element={<HelpCentre />}></Route>
+          <Route path="/newsletter" element={<NewsletterModal />}></Route>
+          <Route path="/about" element={<AboutUs />}></Route>
+          <Route path="/login" element={<Login />}></Route>
+          <Route path="/signin" element={<Register />}></Route>
+          <Route path="/remote_blog" element={<Remote_blog />}></Route>
+          <Route path="/master_blog" element={<Master_blog />}></Route>
+          <Route path="/branding_blog" element={<Branding_blog />}></Route>
+          <Route path="/joblistings" element={<JobListingsPage />}></Route>
+          <Route path="/apply/:jobId" element={<ApplyPage />} />
 
-        <Route
-          path="/frontend_knowmore"
-          element={<Frontend_developer />}
-        ></Route>
-        <Route path="/backend_knowmore" element={<Backend_developer />}></Route>
-        <Route path="/uiux_knowmore" element={<Uiux_developer />}></Route>
-        <Route
-          path="/projectmanager_knowmore"
-          element={<Project_manager />}
-        ></Route>
-      </Routes>
+          <Route
+            path="/frontend_knowmore"
+            element={<Frontend_developer />}
+          ></Route>
+          <Route
+            path="/backend_knowmore"
+            element={<Backend_developer />}
+          ></Route>
+          <Route path="/uiux_knowmore" element={<Uiux_developer />}></Route>
+          <Route
+            path="/projectmanager_knowmore"
+            element={<Project_manager />}
+          ></Route>
+        </Routes>
 
-      <Footer onNewsletterClick={openNewsletterModal} />
-      {isModalOpen && <NewsletterModal onClose={() => setIsModalOpen(false)} />}
+        <Footer onNewsletterClick={openNewsletterModal} />
+        {isModalOpen && (
+          <NewsletterModal onClose={() => setIsModalOpen(false)} />
+        )}
+      </AuthProvider>
     </Router>
   );
 }
