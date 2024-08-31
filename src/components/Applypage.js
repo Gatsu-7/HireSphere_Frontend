@@ -36,7 +36,7 @@ const ApplyPage = () => {
 
     try {
       const response = await fetch(
-        "https://hirespere-backend.onrender.com//api/apply",
+        "https://hirespere-backend.onrender.com/api/apply",
         {
           method: "POST",
           body: data,
